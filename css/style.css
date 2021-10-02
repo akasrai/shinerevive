@@ -1,6 +1,7 @@
 @import 'bootstrap.css';
 @import 'https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css';
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 * {
   margin: 0;
@@ -15,16 +16,85 @@ button {
   font-family: 'Lato', sans-serif;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .navbar {
   list-style-type: none;
 }
 
 .nav-item {
   list-style-type: none;
-  padding: 5px 10px;
+  padding: 0 15px;
+}
+
+.nav-item a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+
+.nav-item a:hover {
+  color: rgb(59, 59, 59);
+}
+
+.nav-item > .active {
+  border-bottom: 4px solid #48a3fc;
 }
 
 .btn-sm {
   border-radius: 16px;
   padding: 4px 16px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.intro {
+  background-image: url('../img//intro-bg.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.gradient-title {
+  background: -webkit-linear-gradient(-70deg, #05a3fc, #7c61a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e0f0fe;
+}
+
+.footer {
+  border-top: 1px solid #e0e0e0;
+}
+
+.social-media {
+  width: max-content;
+}
+
+.social-media-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #05a3fc;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.offer i {
+  color: #05a3fc;
 }
