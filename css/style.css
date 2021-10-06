@@ -2,6 +2,7 @@
 @import 'https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css';
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
   margin: 0;
@@ -13,7 +14,7 @@ input,
 textarea,
 select,
 button {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .bold {
@@ -30,7 +31,7 @@ button {
 }
 
 .nav-item a {
-  padding: 10px 0;
+  padding: 6px 0;
   text-decoration: none;
   color: rgb(10, 10, 10);
 }
@@ -40,7 +41,7 @@ button {
 }
 
 .nav-item > .active {
-  border-bottom: 4px solid #48a3fc;
+  border-bottom: 3px solid #48a3fc;
 }
 
 .btn-sm {
@@ -57,7 +58,7 @@ button {
 }
 
 .intro {
-  background-image: url('../img//intro-bg.svg');
+  background-image: url('../img/intro-bg.svg');
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -70,11 +71,43 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
+.service {
+  background-image: url('../img/pattern-left.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+}
+
 .service-icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #e0f0fe;
+  margin-bottom: 15px;
+}
+
+.service-icon h2 {
+  text-align: center;
+  padding-top: 8px;
+  font-family: 'Montserrat', sans-serif;
+  background: -webkit-linear-gradient(-70deg, #05a3fc, #7c61a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.gallery {
+  background-image: url('../img/pattern-right.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+}
+
+.contact-us {
+  background-image: url('../img/pattern-left.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
 }
 
 .footer {
@@ -93,6 +126,10 @@ button {
   background-color: #05a3fc;
   display: inline-block;
   margin: 0 5px;
+}
+
+.social-media-icon:hover {
+  background-color: #068cda;
 }
 
 .offer i {
