@@ -12,31 +12,31 @@
 </head>
 
 <body>
-  <header class="m-3">
-    <div class="container">
+  <header class="py-3">
+    <div class="container p-0">
       <nav class="d-flex justify-content-between">
         <div class="logo">
           <img src="./img/logo.png" />
         </div>
         <ul class="navbar m-0 p-0">
           <li class="nav-item">
-            <a href="/" class="active">Home</a>
+            <a href="#home" id="home-nav" class="active">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#service">Service</a>
+            <a href="#service" id="service-nav">Service</a>
           </li>
           <li class="nav-item">
-            <a href="#contact-us">Contact</a>
+            <a href="#contact-us" id="contact-nav">Contact</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="intro">
-    <div class="container py-5">
-      <div class="d-flex py-4">
-        <div class="col-md-6 py-5 my-5 px-0">
+  <section class="intro" id="home">
+    <div class="container py-md-5 py-4">
+      <div class="col-md-12 row py-md-4 py-0">
+        <div class="col-md-6 py-md-5 my-md-5 py-0 my-0 px-0">
           <h1 class="gradient-title">Reshine your property with ShineRevive!</strong></h1>
           <p class="m-0">We are Brighton based cleaning specialist. We provide all quality cleaning services accross the
             city.</p>
@@ -54,12 +54,12 @@
             <i class="icon ion-md-arrow-down ml-1"></i>
           </a>
 
-          <a href="#contact-us" class="btn btn-sm btn-outline-primary mt-3">Contact us
+          <a href="#contact-us" class="btn btn-sm btn-outline-primary mt-3">Book Now
             <i class="icon ion-md-arrow-forward ml-1"></i>
           </a>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 intro-illustration">
           <img src="./img/cleaning-tools.png" />
         </div>
       </div>
@@ -170,10 +170,10 @@
   <section id="contact-us" class="contact-us py-5">
     <div class="container">
       <div class="">
-        <h1 class="bold gradient-title">Contact Us</h1>
+        <h1 class="bold gradient-title">Book Now</h1>
       </div>
 
-      <div class="d-flex py-2">
+      <div class="col-md-12 row py-2">
         <div class="col-md-6 p-0 mt-5 pt-5">
           <div class="d-flex w-100">Contact us today for any of the following services.</div>
 
@@ -221,34 +221,40 @@
           <form class="col-md-12 p-0">
             <div class="form-group">
               <div class="col-md-12">
-                <label for="" class="mb-0">Email address</label>
-                <input type="text" class="form-control" placeholder="Enter email">
+                <label for="" class="mb-0">Email address*</label>
+                <input type="email" class="form-control" placeholder="Enter email" required>
               </div>
             </div>
 
             <div class="form-group">
               <div class="col-md-12">
-                <label for="" class="mb-0">Phone number</label>
-                <input type="text" class="form-control" placeholder="Enter phone number">
+                <label for="" class="mb-0">Phone number*</label>
+                <input type="tel" pattern="[0-9]{8,10}" class="form-control" placeholder="Enter phone number" required>
               </div>
             </div>
 
             <div class="form-group">
               <div class="col-md-12">
-                <label for="" class="mb-0">Select Service</label>
-                <select class="form-control custom-select">
-                  <option>Select Service</option>
-                  <option>Service 1</option>
-                  <option>Service 2</option>
-                  <option>Service 3</option>
+                <label for="" class="mb-0">Select Service*</label>
+                <select class="form-control custom-select" required>
+                  <option value="">Select Service</option>
+                  <option value="Rug Cleaning">Rug Cleaning</option>
+                  <option value="Gutter Cleaning">Gutter Cleaning</option>
+                  <option value="Carpet Cleaning">Carpet Cleaning</option>
+                  <option value="Curtain Cleaning">Curtain Cleaning</option>
+                  <option value="Window Cleaning">Window Cleaning</option>
+                  <option value="Upholstery Cleaning">Upholstery Cleaning</option>
+                  <option value="End of Tenancy Cleaning">End of Tenancy Cleaning</option>
+                  <option value="Patio and Driveway Cleaning">Patio and Driveway Cleaning</option>
+                  <option value="Wood Floor Sanding and Sealing">Wood Floor Sanding and Sealing</option>
                 </select>
               </div>
             </div>
 
             <div class="form-group">
               <div class="col-md-12">
-                <label for="" class="mb-0">Message</label>
-                <textarea class="form-control" id="" rows="4"></textarea>
+                <label for="" class="mb-0">Description</label>
+                <textarea class="form-control" id="" rows="4" required></textarea>
               </div>
             </div>
 
@@ -304,6 +310,8 @@
       </div>
     </div>
   </footer>
+  <script src="./js/dom.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

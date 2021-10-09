@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 input,
 textarea,
@@ -17,12 +21,25 @@ button {
   font-family: 'Poppins', sans-serif;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 99999;
+}
+
 .bold {
   font-weight: bold;
 }
 
 .navbar {
   list-style-type: none;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
 }
 
 .nav-item {
@@ -38,6 +55,7 @@ button {
 
 .nav-item a:hover {
   color: rgb(59, 59, 59);
+  border-bottom: 3px solid #81bbf5;
 }
 
 .nav-item > .active {
@@ -134,4 +152,8 @@ button {
 
 .offer i {
   color: #05a3fc;
+}
+
+.intro-illustration img {
+  width: 100%;
 }
