@@ -8,10 +8,11 @@
   <title>Shine Revive | Reshine your property with ShineRevive!</title>
   <link rel="shortcut icon" href="./img/favicon.ico" />
   <link rel="stylesheet" href="./css/style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
-<body>
+<body id="body" class="dark-bg">
   <header class="py-3">
     <div class="container p-0">
       <nav class="d-flex justify-content-between">
@@ -131,7 +132,7 @@
     </div>
   </section>
 
-  <section class="gallery">
+  <section id="gallery" class="gallery py-5">
     <div class="container">
       <div class="">
         <h1 class="bold gradient-title">Portfolio</h1>
@@ -260,6 +261,12 @@
 
             <div class="form-group">
               <div class="col-md-12">
+                <div class="g-recaptcha" data-sitekey="6LdYtL4cAAAAAF8CJlm8W0Aearj5ny52t-Q0IxjC"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-12">
                 <button type="submit" class="btn btn-primary w-100">Submit</button>
               </div>
             </div>
@@ -284,7 +291,7 @@
                 <i class="icon h5 d-block mt-2 text-white ion-logo-facebook"></i>
               </a>
 
-              <a href="call:07427681707" class="social-media-icon">
+              <a href="tel:07427681707" class="social-media-icon">
                 <i class="icon h5 d-block mt-2 text-white ion-logo-whatsapp"></i>
               </a>
 

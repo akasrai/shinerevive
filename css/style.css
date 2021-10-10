@@ -22,10 +22,10 @@ button {
 }
 
 header {
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  background: #fff;
   z-index: 99999;
+  background-color: #01121b; */
 }
 
 .bold {
@@ -50,11 +50,11 @@ header {
 .nav-item a {
   padding: 6px 0;
   text-decoration: none;
-  color: rgb(10, 10, 10);
+  color: #fff;
 }
 
 .nav-item a:hover {
-  color: rgb(59, 59, 59);
+  color: rgb(228, 228, 228);
   border-bottom: 3px solid #81bbf5;
 }
 
@@ -156,4 +156,16 @@ header {
 
 .intro-illustration img {
   width: 100%;
+}
+
+.light-bg {
+  background-color: #fff;
+  color: #000;
+  transition: 1s;
+}
+
+.dark-bg {
+  background-color: #01121b;
+  color: #fff;
+  transition: 1s;
 }
