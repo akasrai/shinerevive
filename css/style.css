@@ -1,8 +1,8 @@
-@import 'bootstrap.css';
-@import 'https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css';
-@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import "bootstrap.css";
+@import "https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css";
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -18,7 +18,7 @@ input,
 textarea,
 select,
 button {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -26,6 +26,11 @@ header {
   top: 0;
   z-index: 99999;
   background-color: #01121b; */
+  top: 0;
+  z-index: 9999;
+  background-color: transparent;
+  backdrop-filter: saturate(180%) blur(5px);
+  backface-visibility: hidden;
 }
 
 .bold {
@@ -50,7 +55,9 @@ header {
 .nav-item a {
   padding: 6px 0;
   text-decoration: none;
-  color: #fff;
+  background: -webkit-linear-gradient(-70deg, #05a3fc, #7c61a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-item a:hover {
@@ -76,7 +83,7 @@ header {
 }
 
 .intro {
-  background-image: url('../img/intro-bg.svg');
+  background-image: url("../img/intro-bg.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -86,11 +93,11 @@ header {
   background: -webkit-linear-gradient(-70deg, #05a3fc, #7c61a8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .service {
-  background-image: url('../img/pattern-left.svg');
+  background-image: url("../img/pattern-left.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: auto;
@@ -107,22 +114,22 @@ header {
 .service-icon h2 {
   text-align: center;
   padding-top: 8px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: -webkit-linear-gradient(-70deg, #05a3fc, #7c61a8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .gallery {
-  background-image: url('../img/pattern-right.svg');
+  background-image: url("../img/pattern-right.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto;
 }
 
 .contact-us {
-  background-image: url('../img/pattern-left.svg');
+  background-image: url("../img/pattern-left.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: auto;
@@ -168,4 +175,8 @@ header {
   background-color: #01121b;
   color: #fff;
   transition: 1s;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 4px #0000000d;
 }
